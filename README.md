@@ -42,8 +42,8 @@ This problem is interpreted to compute a **success probability** of y, namely th
 Where,
 
 - <img src="https://latex.codecogs.com/svg.image?\alpha" title="\alpha" /> is the parameters in the logical program.
-- <img src="https://latex.codecogs.com/svg.image?\T" title="\T" /> is a propositional logic theroy over a set of observed target variables $Y = \{y_1, ..., y_n\}$
-- <img src="https://latex.codecogs.com/svg.image?\f" title="\f" /> is a labeling function, namely $L -> WMC$, mapping literals L to the variables of Y, associated with neural predicted probability $p(\hat y)$.
+- <img src="https://latex.codecogs.com/svg.image?T" title="T" /> is a propositional logic theroy over a set of observed target variables $Y = \{y_1, ..., y_n\}$
+- <img src="https://latex.codecogs.com/svg.image?f" title="f" /> is a labeling function, namely $L -> WMC$, mapping literals L to the variables of Y, associated with neural predicted probability $p(\hat y)$.
 
 ## **Datasets**
 
