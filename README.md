@@ -29,7 +29,7 @@ By building a diagram of target variables, with each node in the diagram reporti
 
 The idea  is to  update the  logistic probability  which is learned by a neural network model after the relevant evidence or background knowledge is taken into account.
 
-This problem is interpreted to compute a **success probability** of y, namely the probability of a ground fact, given <img src="https://latex.codecogs.com/svg.image?P(\hat&space;y)" title="P(\hat y)" />. It is equal to the weighted model count (WMC) of the worlds where this query is true, i.e.,
+This problem is interpreted to compute a **success probability** of  <img src="https://latex.codecogs.com/svg.image?y" title="y" />, namely the probability of a ground fact, given <img src="https://latex.codecogs.com/svg.image?P(\hat&space;y)" title="P(\hat y)" />. It is equal to the weighted model count (WMC) of the worlds where this query is true, i.e.,
 
 
 <img src="https://latex.codecogs.com/svg.image?P(y|\hat&space;y;\alpha)&space;=&space;\frac{WMC(T\wedge&space;y)}{WMC(T)}" title="P(y|\hat y;\alpha) = \frac{WMC(T\wedge y)}{WMC(T)}" />
