@@ -31,12 +31,14 @@ The idea  is to  update the  logistic probability  which is learned by a neural 
 
 This problem is interpreted to compute a **success probability** of $y$, namely the probability of a ground fact $y$, given $P(\hat y)$. It is equal to the weighted model count (WMC) of the worlds where this query is true, i.e.,
 
+```
+
 $P(y|\hat y;\alpha) = \frac {WMC(T\wedge y)}{WMC(T)}$
 
 $WMC(T) = \sum_{m \in M(T)} \prod_{l \in m}f(l)$
 
 $WMC(T \wedge y) = \sum_{m \in M(T)} \prod_{l \in m }f(l|y)$
-
+```
 Where,
 
 - $\alpha$ is the parameters in the logical program.
