@@ -29,21 +29,21 @@ By building a diagram of target variables, with each node in the diagram reporti
 
 The idea  is to  update the  logistic probability  which is learned by a neural network model after the relevant evidence or background knowledge is taken into account.
 
-This problem is interpreted to compute a **success probability** of $y$, namely the probability of a ground fact $y$, given $P(\hat y)$. It is equal to the weighted model count (WMC) of the worlds where this query is true, i.e.,
+This problem is interpreted to compute a **success probability** of y, namely the probability of a ground fact, given <img src="https://latex.codecogs.com/svg.image?P(\hat&space;y)" title="P(\hat y)" />. It is equal to the weighted model count (WMC) of the worlds where this query is true, i.e.,
 
-```
 
-$P(y|\hat y;\alpha) = \frac {WMC(T\wedge y)}{WMC(T)}$
+<img src="https://latex.codecogs.com/svg.image?P(y|\hat&space;y;\alpha)&space;=&space;\frac{WMC(T\wedge&space;y)}{WMC(T)}" title="P(y|\hat y;\alpha) = \frac{WMC(T\wedge y)}{WMC(T)}" />
 
-$WMC(T) = \sum_{m \in M(T)} \prod_{l \in m}f(l)$
+<img src="https://latex.codecogs.com/svg.image?WMC(T)&space;=&space;\sum_{m&space;\in&space;M(T)}&space;\prod_{l&space;\in&space;m}f(l)" title="WMC(T) = \sum_{m \in M(T)} \prod_{l \in m}f(l)" />
 
-$WMC(T \wedge y) = \sum_{m \in M(T)} \prod_{l \in m }f(l|y)$
-```
+<img src="https://latex.codecogs.com/svg.image?WMC(T&space;\wedge&space;y)&space;=&space;\sum_{m&space;\in&space;M(T)}&space;\prod_{l&space;\in&space;m&space;}f(l|y)" title="WMC(T \wedge y) = \sum_{m \in M(T)} \prod_{l \in m }f(l|y)" />
+
+
 Where,
 
-- $\alpha$ is the parameters in the logical program.
-- $T$ is a propositional logic theroy over a set of observed target variables $Y = \{y_1, ..., y_n\}$
-- $f$ is a labeling function, namely $L -> WMC$, mapping literals L to the variables of Y, associated with neural predicted probability $p(\hat y)$.
+- <img src="https://latex.codecogs.com/svg.image?\alpha" title="\alpha" /> is the parameters in the logical program.
+- <img src="https://latex.codecogs.com/svg.image?\T" title="\T" /> is a propositional logic theroy over a set of observed target variables $Y = \{y_1, ..., y_n\}$
+- <img src="https://latex.codecogs.com/svg.image?\f" title="\f" /> is a labeling function, namely $L -> WMC$, mapping literals L to the variables of Y, associated with neural predicted probability $p(\hat y)$.
 
 ## **Datasets**
 
